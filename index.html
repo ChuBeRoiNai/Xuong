@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> ASM</title>
+    <link rel="stylesheet" href="css/c1.css">
+</head>
+<body>
+<div class="container">
+    <a href="#top" class="icontop2">&#8657;</a>
+    <header id="header"> 
+        <a href="#spmoi"> Sách mới</a>
+        <a href="#sphot"> Sách để cử </a>
+        <a href="#bai_viet_moi"> Bài viết</a>
+        <a href="#binh_luan"> Phản hồi khách hàng</a>
+    </header>
+    <nav id="menu"> </nav>
+    <main>
+        <section id="spmoi">
+            <h2>Sách  mới</h2>
+            <div id="data"></div> 
+        </section>
+        <section id="sphot">
+            <h2>Sách đề cử</h2>
+            <div id="data"></div> 
+        </section>
+        <section id="bai_viet_moi">
+            <h2>Bài viết</h2>
+            <div id="data"></div> 
+        </section>
+        <section id="binh_luan">
+            <h2>Ý kiến khách hàng</h2>
+            <div id="data"></div> 
+        </section>
+    </main>
+</div>
+</body>
+</html>
+<script type="module">
+import { lay_loai, lay_sp_moi, lay_sp_hot, lay_bai_viet_moi, lay_binh_luan } from './js/app.js';
+import {lay_anh_dep} from './js/app.js';
+let loai_html = await lay_loai(); 
+let sp_moi_html = await lay_sp_moi(8); 
+document.querySelector("#menu").innerHTML = loai_html;
+document.querySelector("#spmoi #data").innerHTML = sp_moi_html;
+document.querySelector("#sphot #data").innerHTML = await lay_sp_hot(8);
+document.querySelector("#bai_viet_moi #data").innerHTML = await lay_bai_viet_moi(6);
+document.querySelector("#binh_luan #data").innerHTML = await lay_binh_luan(4);
+
+</script>

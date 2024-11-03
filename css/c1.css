@@ -1,0 +1,396 @@
+* { margin:0; padding:0 ; box-sizing: border-box;}
+a { text-decoration: none;}
+html { scroll-behavior: smooth;  }
+#header { background-color: lightgoldenrodyellow; text-align: center; padding: 20px 0; }
+#header a { margin: 0 10px;  font-size: 1.2em;}
+#header a:hover { text-decoration: underline; font-weight: 600;}
+#menu { 
+    background-color: orange; height:60px; line-height: 60px;text-align: center;
+    position: sticky; top:0; left:0
+}
+#menu li { list-style: none; display: inline-block; margin:auto 10px}
+#menu a { font-size: 1.2em; color:white}
+#menu a:hover { color:aqua; text-decoration: underline;} 
+
+#spmoi { background-color: lightcyan; padding-top:40px}
+#spmoi h2 { text-align: center; text-transform: uppercase; }
+#spmoi #data { display: flex; flex-wrap: wrap; margin-top: 30px; 
+justify-content: space-between;}
+#spmoi #data .sp { 
+    width: 20%; text-align: center; border: 1px solid darkgreen ; 
+    padding: 10px;  margin: 10px; font-size: 1.2em;
+    border-radius: 5px;  box-shadow: 1px 1px 1px salmon;
+}
+#spmoi #data .sp h3 { margin-bottom:10px; font-size: 1.2em; height: 45px  }
+#spmoi #data .sp p { margin: 10px;}
+#spmoi #data .sp img { width: 90%; height: 250px; margin: auto; border: 1px solid black}
+
+
+#sphot { background-color: beige; padding-top:40px}
+#sphot h2 { text-align: center; text-transform: uppercase; }
+#sphot #data { display: flex; flex-wrap: wrap; margin-top: 30px; justify-content: space-between;}
+#sphot #data .sp { 
+    width: 21%; text-align: center; border: 1px solid darkgreen ; 
+    padding: 10px;  margin: 10px; font-size: 1.2em;
+    border-radius: 5px;  box-shadow: 1px 1px 1px salmon;
+}
+#sphot #data .sp h3 { margin-bottom:10px; font-size: 1.2em; height: 45px  }
+#sphot #data .sp p { margin: 10px;}
+#sphot #data .sp img { width: 90%; height: 250px; margin: auto;  border: 1px solid black}
+
+
+
+#bai_viet_moi { background-color: lightcyan; padding-top:40px ; }
+#bai_viet_moi h2 { text-align: center; text-transform: uppercase; }
+#bai_viet_moi #data { display: flex; flex-wrap: wrap; margin-top: 30px; justify-content: space-between;}
+#bai_viet_moi #data .bv { 
+    width: 31%; text-align: center; border: 1px solid darkgreen ; 
+    padding: 10px;  margin: 10px; font-size: 1.2em;
+    border-radius: 5px;  box-shadow: 1px 1px 1px salmon;
+}
+#bai_viet_moi #data .bv h3 { margin-bottom:10px; font-size: 1.2em; height: 45px  }
+#bai_viet_moi #data .bv p { margin: 10px; text-align: justify; line-height: 150%;}
+#bai_viet_moi #data .bv img { width: 90%; height: 250px; margin: auto;  border: 1px solid black}
+
+
+
+#binh_luan { background-color:  beige; padding-top:40px}
+#binh_luan h2 { text-align: center; text-transform: uppercase; }
+#binh_luan #data { display: flex; flex-wrap: wrap; margin-top: 30px; justify-content: space-between;}
+#binh_luan #data .bl { 
+    width: 47%; text-align: center; border: 1px solid darkgreen ; 
+    padding: 10px;  margin: 10px; font-size: 1.2em;
+    border-radius: 5px;  box-shadow: 1px 1px 1px salmon;
+}
+#binh_luan #data .bl h5 { margin-bottom:10px; font-size: 1em;; text-align: left; }
+#binh_luan #data .bl h5 span { float:right}
+#binh_luan #data .bl p { margin: 10px; text-align: justify; line-height: 150%; max-height:200px; overflow:hidden; text-overflow: ellipsis;  }
+
+
+
+#anh_dep { background-color:  lightcyan; padding-top:40px}
+#anh_dep h2 { text-align: center; text-transform: uppercase; }
+#anh_dep #data { display: flex; flex-wrap: wrap; margin-top: 30px; justify-content: space-between;}
+#anh_dep #data .hinh { 
+    width: 21%; text-align: center; border: 1px solid darkgreen ; 
+    padding: 10px;  margin: 10px; font-size: 1.2em;
+    border-radius: 5px;  box-shadow: 1px 1px 1px salmon;
+}
+#anh_dep #data .hinh img { width: 100%; height: 250px; margin: auto;  border: 1px solid black}
+
+a.icontop {
+    float:right;
+    width: 35px; height: 35px; line-height: 30px;
+    border-radius: 50%; font-size: 1em;
+    border: 2px solid darkblue; color:darkblue;
+    cursor: pointer; margin-right: 20px;
+}
+a.icontop2 {
+    position: fixed; bottom: 10px; left: 5px;
+    width: 35px; height: 35px; line-height: 35px;
+    border-radius: 50%; font-size: 1.3em;
+    background-color: darkorange;
+    color:white;
+    cursor: pointer;  text-align: center;
+}
+
+
+#sp_trong_loai { background-color: beige; padding-top:40px}
+#sp_trong_loai h2 { text-align: center; text-transform: uppercase; }
+#sp_trong_loai #data { display: flex; flex-wrap: wrap; margin-top: 30px; justify-content: space-between;}
+#sp_trong_loai #data .sp { 
+    width: 21%; text-align: center; border: 1px solid darkgreen ; 
+    padding: 10px;  margin: 10px; font-size: 1.2em;
+    border-radius: 5px;  box-shadow: 1px 1px 1px salmon;
+}
+#sp_trong_loai #data .sp h3 { margin-bottom:10px; font-size: 1.2em; height: 45px  }
+#sp_trong_loai #data .sp p { margin: 10px;}
+#sp_trong_loai #data .sp img { width: 90%; height: 250px; margin: auto;  border: 1px solid black}
+/* Đặt mặc định cho toàn bộ trang */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+a { 
+    text-decoration: none; 
+    transition: all 0.3s ease; 
+}
+html { 
+    scroll-behavior: smooth;  
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+#header { 
+    background-color: #f9f3c2; 
+    text-align: center; 
+    padding: 20px 0; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#header a { 
+    margin: 0 15px;  
+    font-size: 1.2em; 
+    color: #333;
+}
+#header a:hover { 
+    text-decoration: underline; 
+    font-weight: 600; 
+    color: #f47c3c;
+}
+
+/* Menu */
+#menu { 
+    background-color: #ff8c00; 
+    height:60px; 
+    line-height: 60px;
+    text-align: center;
+    position: sticky; 
+    top: 0; 
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#menu li { 
+    list-style: none; 
+    display: inline-block; 
+    margin: 0 15px;
+}
+#menu a { 
+    font-size: 1.2em; 
+    color: #fff; 
+    transition: color 0.3s ease;
+}
+#menu a:hover { 
+    color: #00FFFF; 
+    text-decoration: underline;
+}
+
+/* Section SP moi */
+#spmoi { 
+    background-color: #e3f2fd; 
+    padding-top: 40px; 
+}
+#spmoi h2 { 
+    text-align: center; 
+    text-transform: uppercase; 
+    color: #333;
+}
+#spmoi #data { 
+    display: flex; 
+    flex-wrap: wrap; 
+    margin-top: 30px; 
+    justify-content: space-between;
+}
+#spmoi #data .sp { 
+    width: 22%; 
+    text-align: center; 
+    border: 1px solid #4caf50; 
+    padding: 15px;  
+    margin: 10px; 
+    font-size: 1.2em;
+    border-radius: 8px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#spmoi #data .sp:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+#spmoi #data .sp h3 { 
+    margin-bottom: 15px; 
+    font-size: 1.2em; 
+    color: #333; 
+    height: 50px;
+}
+#spmoi #data .sp p { 
+    margin: 10px; 
+    color: #666;
+}
+#spmoi #data .sp img { 
+    width: 90%; 
+    height: 250px; 
+    margin: auto; 
+    border: 1px solid #333; 
+    border-radius: 5px;
+}
+
+/* Section San Pham Hot */
+#sphot { 
+    background-color: #f5f5dc; 
+    padding-top: 40px;
+}
+#sphot h2 { 
+    text-align: center; 
+    text-transform: uppercase; 
+    color: #333;
+}
+#sphot #data { 
+    display: flex; 
+    flex-wrap: wrap; 
+    margin-top: 30px; 
+    justify-content: space-between;
+}
+#sphot #data .sp { 
+    width: 22%; 
+    text-align: center; 
+    border: 1px solid #4caf50; 
+    padding: 15px; 
+    margin: 10px; 
+    font-size: 1.2em;
+    border-radius: 8px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#sphot #data .sp:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+#sphot #data .sp h3 { 
+    margin-bottom: 15px; 
+    font-size: 1.2em; 
+    color: #333; 
+    height: 50px;
+}
+#sphot #data .sp p { 
+    margin: 10px; 
+    color: #666;
+}
+#sphot #data .sp img { 
+    width: 90%; 
+    height: 250px; 
+    margin: auto; 
+    border: 1px solid #333; 
+    border-radius: 5px;
+}
+
+/* Các phần khác (bài viết, bình luận, ảnh đẹp) sẽ được tối ưu tương tự như các phần trên */
+
+/* Hiệu ứng cuộn lại đầu trang */
+a.icontop, a.icontop2 {
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer; 
+    font-size: 1.3em;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+a.icontop:hover, a.icontop2:hover {
+    background-color: #ff5722;
+    transform: translateY(-5px);
+}
+/* Phần Bài Viết */
+#bai_viet_moi { 
+    background-color: lightcyan; 
+    padding-top: 40px; 
+    padding-bottom: 40px; /* Thêm khoảng cách bên dưới */
+}
+#bai_viet_moi h2 { 
+    text-align: center; 
+    text-transform: uppercase; 
+    font-size: 2em; /* Tăng kích thước tiêu đề */
+    color: darkslategray; /* Màu sắc cho tiêu đề */
+    margin-bottom: 30px; /* Tăng khoảng cách dưới tiêu đề */
+}
+#bai_viet_moi #data { 
+    display: flex; 
+    flex-wrap: wrap; 
+    margin-top: 30px; 
+    justify-content: space-between; 
+}
+#bai_viet_moi #data .bv { 
+    width: 31%; 
+    text-align: center; 
+    border: 1px solid darkgreen; 
+    padding: 15px; /* Tăng padding */
+    margin: 15px; /* Tăng khoảng cách giữa các bài viết */
+    font-size: 1.2em;
+    border-radius: 10px; /* Làm mềm các góc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ */
+    transition: transform 0.3s, box-shadow 0.3s; /* Hiệu ứng chuyển */
+}
+#bai_viet_moi #data .bv:hover {
+    transform: translateY(-5px); /* Hiệu ứng nổi lên khi hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bóng đổ rõ hơn khi hover */
+}
+#bai_viet_moi #data .bv h3 { 
+    margin-bottom: 15px; 
+    font-size: 1.5em; /* Tăng kích thước chữ */
+    height: 45px;  
+    color: darkslategray; /* Màu tiêu đề bài viết */
+}
+#bai_viet_moi #data .bv p { 
+    margin: 10px; 
+    text-align: justify; 
+    line-height: 1.6; /* Tăng khoảng cách dòng */
+    color: dimgray; /* Màu sắc dễ nhìn hơn */
+}
+#bai_viet_moi #data .bv img { 
+    width: 90%; 
+    height: 250px; 
+    margin: auto;  
+    border: 1px solid black; 
+    border-radius: 5px; /* Làm mềm các góc của hình ảnh */
+}
+
+/* Phần Bình Luận */
+#binh_luan { 
+    background-color: beige; 
+    padding-top: 40px; 
+    padding-bottom: 40px; /* Thêm khoảng cách bên dưới */
+}
+#binh_luan h2 { 
+    text-align: center; 
+    text-transform: uppercase; 
+    font-size: 2em; /* Tăng kích thước tiêu đề */
+    color: darkslategray; /* Màu sắc cho tiêu đề */
+    margin-bottom: 30px; /* Tăng khoảng cách dưới tiêu đề */
+}
+#binh_luan #data { 
+    display: flex; 
+    flex-wrap: wrap; 
+    margin-top: 30px; 
+    justify-content: space-between; 
+}
+#binh_luan #data .bl { 
+    width: 47%; 
+    text-align: left; /* Điều chỉnh căn trái */
+    border: 1px solid darkgreen; 
+    padding: 20px; /* Tăng padding */
+    margin: 15px; /* Tăng khoảng cách giữa các bình luận */
+    font-size: 1.2em;
+    border-radius: 10px; /* Làm mềm các góc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ */
+    transition: transform 0.3s, box-shadow 0.3s; /* Hiệu ứng chuyển */
+}
+#binh_luan #data .bl:hover {
+    transform: translateY(-5px); /* Hiệu ứng nổi lên khi hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bóng đổ rõ hơn khi hover */
+}
+#binh_luan #data .bl h5 { 
+    margin-bottom: 10px; 
+    font-size: 1.1em; /* Tăng kích thước chữ */
+    font-weight: bold; /* Tạo cảm giác nổi bật */
+    color: darkslategray; /* Màu tiêu đề bình luận */
+    text-align: left; 
+}
+#binh_luan #data .bl h5 span { 
+    float: right; 
+    color: gray; /* Màu sắc thời gian */
+    font-weight: normal; 
+}
+#binh_luan #data .bl p { 
+    margin: 10px; 
+    text-align: justify; 
+    line-height: 1.6; /* Tăng khoảng cách dòng */
+    color: dimgray; /* Màu sắc dễ nhìn hơn */
+    max-height: 200px; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
